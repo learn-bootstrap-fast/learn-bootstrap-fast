@@ -46,26 +46,32 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="/index.html">WindSafe.ai</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/map.html">Map</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" id="brand-animate" href="/index.html">WindSafe.ai</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/map.html">
+            <i class="lni lni-warning text-danger"></i> Alerts
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section id="hero">
     <h1 class="fw-bold">Active Technician Activity</h1>
     <iframe
-      src="https://app.mapsly.com/map/50a6b6a8fe6b429aadf79aab3294c2ab"
+      src="https://app.mapsly.com/map/489757ae4aa54675b773809c97cc1319"
       title="Technician Activity Map"
       allowfullscreen
       loading="lazy">
@@ -75,19 +81,6 @@
   <!-- Alerts Section -->
   <section id="alerts" class="py-5 bg-white">
     <div class="container">
-      <div class="text-center mb-4">
-        <h2 class="fw-bold"><i class="lni lni-warning text-danger me-2"></i>Active Technician Activity</h2>
-        <p class="text-muted">Stay ahead of scheduled agricultural spraying near wind turbine sites.</p>
-      </div>
-      <div class="ratio ratio-16x9">
-        <iframe 
-          src="https://app.mapsly.com/map/50a6b6a8fe6b429aadf79aab3294c2ab" 
-          title="WindSafe Spray Alert Map" 
-          allowfullscreen 
-          loading="lazy"
-          style="border:0;">
-        </iframe>
-      </div>
     </div>
   </section>
 
@@ -103,3 +96,4 @@
   <script src="assets/js/scripts.js"></script>
 </body>
 </html>
+
